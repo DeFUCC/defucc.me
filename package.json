@@ -1,7 +1,7 @@
 {
-  "name": "axioma.center",
+  "name": "defucc.me",
   "version": "1.1.1",
-  "description": "Animated geometry",
+  "description": "Development Foundation for Universalization, Cooperation and Creativity",
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev ",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davay42/axioma.center.git"
+    "url": "git+https://github.com/DeFUCC/defucc.me.git"
   },
   "keywords": [
     "geometry",
@@ -21,9 +21,9 @@
   "author": "davay",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/davay42/axioma.center/issues"
+    "url": "https://github.com/DeFUCC/defucc.me/issues"
   },
-  "homepage": "https://github.com/davay42/axioma.center#readme",
+  "homepage": "https://github.com/DeFUCC/defucc.me",
   "dependencies": {
     "@vueuse/core": "6.8.0",
     "vue": "^3.2.21"

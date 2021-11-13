@@ -6,7 +6,6 @@ import WindiCSS from 'vite-plugin-windicss'
 import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
-
   plugins: [
     Icons(),
     AutoImport({   
