@@ -1,0 +1,65 @@
+body {
+  --font-family-base: 'Commissioner', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  --font-family-mono: 'Fira Code', source-code-pro, Menlo, Monaco, Consolas,
+    'Courier New', monospace;
+  --c-text: #333;
+}
+
+html {
+  scroll: smooth;
+  @apply max-h-100vh overflow-y-scroll;
+  scroll-snap-type: y mandatory;
+  word-break: break-word;
+}
+body {
+  @apply bg-light-200;
+  font-family: var(--font-family-base);
+}
+
+/* commissioner-regular - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-regular.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-regular.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* commissioner-700 - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-700.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-700.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.found {
+  color: gray;
+}
+
+.dev {
+  color: rgb(128, 0, 128);
+}
+
+.uni {
+  color: rgb(255, 102, 0);
+}
+
+.coop {
+  color: rgb(255, 0, 0);
+}
+
+.crea {
+  color: rgb(0, 128, 0);
+}

@@ -16,7 +16,7 @@ const config = {
   themeConfig: {
     logo: '/media/logo/holologo.svg',
     icon: 'media/logo/icon.svg',
-    repo: 'https://github.com/davay42/axioma.center',
+    repo: 'https://github.com/DeFUCC/defucc.me',
   },
 }
 
