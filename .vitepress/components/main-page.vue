@@ -6,31 +6,35 @@ const first = ref();
 import { useData } from 'vitepress'
 
 const { frontmatter } = useData();
+const props = defineProps({
+  slides: { type: Object },
+})
 </script>
 
 <template lang="pug">
-.slides
+.flex.flex-col
   .slide
-    .text-42vw.font-bold.flex.flex-wrap
-      .p-0(v-for="(term,t) in frontmatter.def" :key="term" :style="{ color: term.color }") {{ term.abbr }}
+    .text-30vw.font-bold.flex.flex-wrap
+      a.p-6(:href="`#${term.title}`" v-for="(term,t) in slides" :key="term" :style="{ color: term.color }") {{ term.abbr }}
   .slide
-    .text-12vw
-      .mr-2(v-for="(term,t) in frontmatter.def" :key="term" :style="{ color: term.color }") {{ term.title }} 
-  .slide(v-for="(term,t) in frontmatter.def" :key="term" :style="{ color: term.color }")
+    .text-11vw.flex.flex-col.leading-1em
+      a.mr-2(:href="`#${term.title}`" v-for="(term,t) in slides" :key="term" :style="{ color: term.color }") {{ term.title }} 
+  .slide(:id="term.title" v-for="(term,t) in slides" :key="term" :style="{ color: term.color }")
     .p-4
-      .text-10vw.mb-8.font-bold {{ term.title }}
-      .text-3rem.leading-normal.mb-12 {{ term.desc }}
+      .text-8vw.mb-8.font-bold {{ term.title }}
+      .text-5vw.leading-normal.mb-12 {{ term.desc }}
       .text-2xl.text-dark-900.leading-normal {{ term.context }}
-  .slide
-    .flex.flex-col
-      .text-8em.mb-8.font-bold MISSION
-      .text-6em {{ frontmatter.mission }}
+      .flex.flex-wrap
+        a.p-2.text-100px(v-for="link in term.links" :key="link" :href="link.url" target="_blank")
+          .p-0
+            la-github(v-if="link.type == 'github'")
+            simple-icons-kofi(v-if="link.type == 'ko-fi'")
   .flex.items-center.bg-dark-400.snap-end.text-white.p-4.z-10.relative
     la-creative-commons.mx-2
     .mr-2 2012–PRESENT
     .m-0 MIT Licence
     .flex-1
-    a.text-white.text-2xl.mr-4(href="https://github.com/DeFUCC" target="_blank")
+    a.text-white.text-2xl.mr-4(href="https://github.com/DeFUCC/defucc.me" target="_blank")
       la-github
     a.text-white.text-2xl(href="https://ko-fi.com/B0B44CM90" target="_blank")
       simple-icons-kofi
@@ -46,10 +50,9 @@ const { frontmatter } = useData();
 
 <style scoped>
 .slide {
-  scroll-snap-align: start;
-  @apply flex flex-wrap items-center justify-start h-100vh p-4 relative;
+  @apply flex flex-wrap items-center justify-start px-8 py-16 relative min-h-100vh;
   &:nth-child(2n) {
-    @apply bg-light-800/10;
+    @apply bg-light-800/50;
   }
   & img {
     @apply max-w-full max-h-100vh;

@@ -6,6 +6,9 @@ import WindiCSS from 'vite-plugin-windicss'
 import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
+  server: {
+    port: 3200,
+  },
   plugins: [
     Icons(),
     AutoImport({   
