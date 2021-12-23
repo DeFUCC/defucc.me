@@ -31,13 +31,13 @@ slides:
     desc: The process of deliberate application of freely definable efforts in order to increase the subjective measure of perfection of the world
     color: "#070"
   mission:
-    abbr: "*"
+    abbr: "/"
     title: Mission
     desc: To balance the excess of specialization, competition and consumerism in modern culture by providing ways to explore creative collaboration potential of humans and the society as a whole.
-    color: "#444"
+    color: "#333"
   explore:
-    abbr: "/"
-    color: "#999"
+    abbr: "*"
+    color: "#555"
     title: Explore
     desc: Links to learn more about DeFUCC
     links:

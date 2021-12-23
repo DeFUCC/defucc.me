@@ -14,8 +14,8 @@ const props = defineProps({
 <template lang="pug">
 .flex.flex-col
   .slide
-    .text-30vw.font-bold.flex.flex-wrap
-      a.p-6(:href="`#${term.title}`" v-for="(term,t) in slides" :key="term" :style="{ color: term.color }") {{ term.abbr }}
+    .text-3d.font-bold.flex.flex-wrap
+      a.p-5(:href="`#${term.title}`" v-for="(term,t) in slides" :key="term" :style="{ color: term.color }") {{ term.abbr }}
   .slide
     .text-11vw.flex.flex-col.leading-1em
       a.mr-2(:href="`#${term.title}`" v-for="(term,t) in slides" :key="term" :style="{ color: term.color }") {{ term.title }} 
@@ -63,5 +63,17 @@ const props = defineProps({
 }
 .text {
   @apply absolute top-4 left-4 text-sm opacity-50;
+}
+
+.text-3d {
+  font-size: 12em;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 </style>
