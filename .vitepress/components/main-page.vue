@@ -15,15 +15,15 @@ const props = defineProps({
 .flex.flex-col
   .slide
     .text-3d.font-bold.flex.flex-wrap
-      a.p-5(:href="`#${term.title}`" v-for="(term,t) in slides" :key="term" :style="{ color: term.color }") {{ term.abbr }}
+      a.p-5(:href="`#${term.title}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.abbr }}
   .slide
     .text-11vw.flex.flex-col.leading-1em
-      a.mr-2(:href="`#${term.title}`" v-for="(term,t) in slides" :key="term" :style="{ color: term.color }") {{ term.title }} 
-  .slide(:id="term.title" v-for="(term,t) in slides" :key="term" :style="{ color: term.color }")
+      a.mr-2(:href="`#${term.title}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.title }} 
+  .slide(:id="term.title" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }")
     .p-4
       .text-8vw.mb-8.font-bold {{ term.title }}
       .text-5vw.leading-normal.mb-12 {{ term.desc }}
-      .text-2xl.text-dark-900.leading-normal {{ term.context }}
+      .text-2xl.text-dark-900.leading-normal.max-w-55ch {{ term.context }}
       .flex.flex-wrap
         a.p-2.text-100px(v-for="link in term.links" :key="link" :href="link.url" target="_blank")
           .p-0
