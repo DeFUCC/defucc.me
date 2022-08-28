@@ -15,11 +15,11 @@ const props = defineProps({
 .flex.flex-col
   .slide
     .text-3d.font-bold.flex.flex-wrap
-      a.p-5(:href="`#${term.title}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.abbr }}
+      a.p-5.my-20(:href="`#${t}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.abbr }}
   .slide
     .text-11vw.flex.flex-col.leading-1em
-      a.mr-2(:href="`#${term.title}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.title }} 
-  .slide(:id="term.title" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }")
+      a.mr-2(:href="`#${t}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.title }} 
+  .slide(:id="t" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }")
     .p-4
       .text-8vw.mb-8.font-bold {{ term.title }}
       .text-5vw.leading-normal.mb-12 {{ term.desc }}
@@ -51,16 +51,20 @@ const props = defineProps({
 <style scoped>
 .slide {
   @apply flex flex-wrap items-center justify-start px-8 py-16 relative min-h-100vh;
+
   &:nth-child(2n) {
     @apply bg-light-800/50;
   }
+
   & img {
     @apply max-w-full max-h-100vh;
   }
 }
+
 .link {
-  @apply text-dark-400 opacity-50 p-4 hover:opacity-100 transition-all duration-300 ease-in-out;
+  @apply text-dark-400 opacity-50 p-4 hover: opacity-100 transition-all duration-300 ease-in-out;
 }
+
 .text {
   @apply absolute top-4 left-4 text-sm opacity-50;
 }

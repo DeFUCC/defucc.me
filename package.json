@@ -1,44 +1,45 @@
 {
-  "name": "defucc.me",
-  "version": "1.2.0",
-  "description": "Development Foundation for Universalization, Cooperation and Creativity",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vitepress dev ",
-    "build": "vitepress build ",
-    "serve": "vitepress serve ",
-    "deploy": "sh deploy.sh"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DeFUCC/defucc.me.git"
-  },
-  "keywords": [
-    "geometry",
-    "animation",
-    "svg"
-  ],
-  "author": "davay",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DeFUCC/defucc.me/issues"
-  },
-  "homepage": "https://github.com/DeFUCC/defucc.me",
-  "dependencies": {
-    "@vueuse/core": "8.2.5",
-    "vue": "^3.2.31"
-  },
-  "devDependencies": {
-    "@iconify/json": "^2.1.25",
-    "@types/node": "^17.0.23",
-    "esbuild-register": "^3.3.2",
-    "pug": "^3.0.2",
-    "unplugin-auto-import": "^0.6.9",
-    "unplugin-icons": "^0.14.1",
-    "unplugin-vue-components": "^0.18.5",
-    "vite": "^2.9.1",
-    "vite-plugin-windicss": "^1.8.3",
-    "vitepress": "^0.22.3",
-    "windicss": "^3.5.1"
-  }
+	"name": "defucc.me",
+	"version": "1.2.0",
+	"description": "Development Foundation for Universalization, Cooperation and Creativity",
+	"keywords": [
+		"geometry",
+		"animation",
+		"svg"
+	],
+	"homepage": "https://github.com/DeFUCC/defucc.me",
+	"bugs": {
+		"url": "https://github.com/DeFUCC/defucc.me/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DeFUCC/defucc.me.git"
+	},
+	"license": "MIT",
+	"author": "davay",
+	"main": "index.js",
+	"scripts": {
+		"build": "vitepress build ",
+		"deploy": "sh deploy.sh",
+		"dev": "vitepress dev ",
+		"serve": "vitepress serve "
+	},
+	"dependencies": {
+		"@vueuse/core": "9.1.1",
+		"vue": "^3.2.37"
+	},
+	"devDependencies": {
+		"@iconify/json": "^2.1.99",
+		"@types/node": "^18.7.13",
+		"esbuild-register": "^3.3.3",
+		"pug": "^3.0.2",
+		"unplugin-auto-import": "^0.11.2",
+		"unplugin-icons": "^0.14.8",
+		"unplugin-vue-components": "^0.22.4",
+		"vite": "^3.0.9",
+		"vite-plugin-windicss": "^1.8.7",
+		"vitepress": "1.0.0-alpha.12",
+		"vue-demi": "0.13.11",
+		"windicss": "^3.5.6"
+	}
 }

@@ -6,7 +6,7 @@ slides:
   de:
     abbr: De
     title: Development
-    desc: Movement of a system towards the always shifting point of equilibrium
+    desc: Movement of a system towards it's shifting point of equilibrium
     color: "#808"
     context: Our main goal is to help humankind to develop in a conscious way. We’ve investigated three main directions, that need to be balanced in our society and in almost every side of our daily life.
   f:
@@ -51,3 +51,5 @@ slides:
 ---
 
 <main-page :slides="$frontmatter.slides" />
+
+[Designs](/designs/)
