@@ -1,6 +1,9 @@
 import { metaData } from './constants'
 
 const head = [
+
+  ["script", { async: true, defer: true, "data-website-id": "75f9983c-4c71-49fe-9eb7-495d3ea6f638", src: "https://stats.defucc.me/umami.js" }],
+
   ['meta', { name: 'author', content: metaData?.author }],
   ['meta', { name: 'keywords', content: metaData?.tags }],
   ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
