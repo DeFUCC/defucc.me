@@ -13,13 +13,16 @@ const props = defineProps({
 
 <template lang="pug">
 .flex.flex-col
-  .slide
+
+  section.slide
     .text-3d.font-bold.flex.flex-wrap
       a.p-5.my-20(:href="`#${t}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.abbr }}
-  .slide
+
+  section.slide
     .text-11vw.flex.flex-col.leading-1em
       a.mr-2(:href="`#${t}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.title }} 
-  .slide(:id="t" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }")
+
+  section.slide(:id="t" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }")
     .p-4
       .text-8vw.mb-8.font-bold {{ term.title }}
       .text-5vw.leading-normal.mb-12 {{ term.desc }}
@@ -29,7 +32,8 @@ const props = defineProps({
           .p-0
             la-github(v-if="link.type == 'github'")
             simple-icons-kofi(v-if="link.type == 'ko-fi'")
-  .flex.items-center.bg-dark-400.snap-end.text-white.p-4.z-10.relative
+
+  footer.flex.items-center.bg-dark-400.snap-end.text-white.p-4.z-10.relative
     la-creative-commons.mx-2
     .mr-2 2012–PRESENT
     .m-0 MIT Licence
@@ -38,11 +42,12 @@ const props = defineProps({
       la-github
     a.text-white.text-2xl(href="https://ko-fi.com/B0B44CM90" target="_blank")
       simple-icons-kofi
-  .rounded.p-2.opacity-50.text-2xl.fixed.bottom-0.right-0.z-5.cursor-pointer.transition-all.duration-200.ease(
+
+  .rounded.p-2.opacity-50.text-2xl.fixed.top-4.right-4.z-15.cursor-pointer.transition-all.duration-200.ease(
     class="hover:opacity-100"
     @click="toggle()"
     v-if="isSupported"
-  )
+    )
     la-expand
 </template>
 

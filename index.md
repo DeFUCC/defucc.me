@@ -51,5 +51,3 @@ slides:
 ---
 
 <main-page :slides="$frontmatter.slides" />
-
-[Designs](/designs/)
