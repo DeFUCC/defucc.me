@@ -1,9 +1,10 @@
 <script setup>
+import { useData } from 'vitepress'
 import { useFullscreen } from '@vueuse/core'
+
+
 const { toggle, isSupported } = useFullscreen();
 const first = ref();
-
-import { useData } from 'vitepress'
 
 const { frontmatter } = useData();
 const props = defineProps({
@@ -13,7 +14,9 @@ const props = defineProps({
 
 <template lang="pug">
 .flex.flex-col
-
+  client-only
+    Suspense
+      gun
   section.slide
     .text-3d.font-bold.flex.flex-wrap
       a.p-5.my-20(:href="`#${t}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.abbr }}
@@ -51,9 +54,7 @@ const props = defineProps({
     la-expand
 </template>
 
-
-
-<style scoped>
+<style scoped lang="postcss">
 .slide {
   @apply flex flex-wrap items-center justify-start px-8 py-16 relative min-h-100vh;
 
