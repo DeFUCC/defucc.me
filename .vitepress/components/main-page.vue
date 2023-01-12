@@ -14,9 +14,9 @@ const props = defineProps({
 
 <template lang="pug">
 .flex.flex-col
-  client-only
-    Suspense
-      gun
+  //- client-only
+  //-   Suspense
+  //-     gun
   section.slide
     .text-3d.font-bold.flex.flex-wrap
       a.p-5.my-20(:href="`#${t}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.abbr }}
@@ -24,6 +24,9 @@ const props = defineProps({
   section.slide
     .text-11vw.flex.flex-col.leading-1em
       a.mr-2(:href="`#${t}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.title }} 
+
+  section.p-4.md-p-12.leading-loose
+    slot 
 
   section.slide(:id="t" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }")
     .p-4
@@ -35,6 +38,7 @@ const props = defineProps({
           .p-0
             la-github(v-if="link.type == 'github'")
             simple-icons-kofi(v-if="link.type == 'ko-fi'")
+
 
   footer.flex.items-center.bg-dark-400.snap-end.text-white.p-4.z-10.relative
     la-creative-commons.mx-2
@@ -68,7 +72,7 @@ const props = defineProps({
 }
 
 .link {
-  @apply text-dark-400 opacity-50 p-4 hover: opacity-100 transition-all duration-300 ease-in-out;
+  @apply text-dark-400 opacity-50 p-4 hover-opacity-100 transition-all duration-300 ease-in-out;
 }
 
 .text {

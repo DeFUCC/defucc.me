@@ -50,4 +50,12 @@ slides:
         url: https://ko-fi.com/B0B44CM90
 ---
 
-<main-page :slides="$frontmatter.slides" />
+<main-page :slides="$frontmatter.slides" >
+<p>
+The DeFUCC Foundation is a non-formal non-profit organization whose goal is to promote universalization, cooperation, and creativity in individuals and society.
+</p><p>
+Since 2012, we have conducted wide research, developed socio-cultural programs, and implemented them to the best of our abilities. We gather and summarize a wide range of theoretical and practical experience, and aim to share these valuable insights with the world. We openly systematize this knowledge into a unified system, yet it is not a dogma, but rather a starting point for those who wish to join us in the process of transforming ourselves and the world around us.
+</p><p>
+To move towards clear goals in a coordinated manner, it is important that we understand each other. For this reason, we develop a special language for productive communication, the Fruit Discourse. The economic model of the Fund's development is based on the principles of voluntary participation and mutual support.
+</p>
+</main-page>

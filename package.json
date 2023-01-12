@@ -25,21 +25,22 @@
 		"serve": "vitepress serve "
 	},
 	"dependencies": {
-		"@gun-vue/composables": "^0.11.7",
-		"@vueuse/core": "9.6.0",
+		"@gun-vue/components": "0.12.4",
+		"@gun-vue/composables": "0.12.4",
+		"@vueuse/core": "9.10.0",
 		"vue": "^3.2.45"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.1.150",
-		"@types/node": "^18.11.13",
-		"esbuild-register": "^3.4.1",
+		"@iconify/json": "^2.2.5",
+		"@types/node": "^18.11.18",
+		"esbuild-register": "^3.4.2",
 		"pug": "^3.0.2",
-		"unplugin-auto-import": "^0.12.0",
-		"unplugin-icons": "^0.14.14",
-		"unplugin-vue-components": "^0.22.11",
-		"vite": "^4.0.0",
-		"vite-plugin-windicss": "^1.8.8",
-		"vitepress": "1.0.0-alpha.31",
+		"unplugin-auto-import": "^0.12.1",
+		"unplugin-icons": "^0.15.1",
+		"unplugin-vue-components": "^0.22.12",
+		"vite": "^4.0.4",
+		"vite-plugin-windicss": "^1.8.10",
+		"vitepress": "1.0.0-alpha.36",
 		"vue-demi": "0.13.11",
 		"windicss": "^3.5.6"
 	}

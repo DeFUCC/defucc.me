@@ -1,9 +1,10 @@
 <script setup async>
-const { useAccount } = await import('@gun-vue/composables')
-
-const { account } = useAccount()
+import '@gun-vue/components/dist/style.css'
+const { UserHome } = await import('@gun-vue/components')
 </script>
 
-<template lang="pug">
-.fixed.top-2.right-2 {{ account.profile?.name }}!!!
+<template>
+	<div class="fixed right-2 bottom-2 z-100">
+		<UserHome></UserHome>
+	</div>
 </template>
