@@ -14,9 +14,6 @@ const props = defineProps({
 
 <template lang="pug">
 .flex.flex-col
-  //- client-only
-  //-   Suspense
-  //-     gun
   section.slide
     .text-3d.font-bold.flex.flex-wrap
       a.p-5.my-20(:href="`#${t}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.abbr }}
