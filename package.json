@@ -22,26 +22,23 @@
 		"build": "vitepress build ",
 		"deploy": "sh deploy.sh",
 		"dev": "vitepress dev ",
-		"serve": "vitepress serve "
+		"serve": "vitepress serve --port 4195"
 	},
 	"dependencies": {
-		"@gun-vue/components": "0.12.4",
-		"@gun-vue/composables": "0.12.4",
-		"@vueuse/core": "9.10.0",
-		"vue": "^3.2.45"
+		"@vueuse/core": "10.2.1",
+		"vue": "^3.3.7"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.5",
-		"@types/node": "^18.11.18",
-		"esbuild-register": "^3.4.2",
+		"@iconify/json": "^2.2.133",
+		"@types/node": "^20.8.9",
+		"esbuild-register": "^3.5.0",
 		"pug": "^3.0.2",
-		"unplugin-auto-import": "^0.12.1",
-		"unplugin-icons": "^0.15.1",
-		"unplugin-vue-components": "^0.22.12",
-		"vite": "^4.0.4",
-		"vite-plugin-windicss": "^1.8.10",
-		"vitepress": "1.0.0-alpha.36",
-		"vue-demi": "0.13.11",
+		"unplugin-auto-import": "^0.16.7",
+		"unplugin-icons": "^0.17.1",
+		"unplugin-vue-components": "^0.25.2",
+		"vite": "^4.5.0",
+		"vite-plugin-windicss": "^1.9.1",
+		"vitepress": "1.0.0-rc.24",
 		"windicss": "^3.5.6"
 	}
 }

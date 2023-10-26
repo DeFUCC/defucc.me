@@ -52,10 +52,14 @@ slides:
 
 <main-page :slides="$frontmatter.slides" >
 <p>
-The DeFUCC Foundation is a non-formal non-profit organization whose goal is to promote universalization, cooperation, and creativity in individuals and society.
-</p><p>
-Since 2012, we have conducted wide research, developed socio-cultural programs, and implemented them to the best of our abilities. We gather and summarize a wide range of theoretical and practical experience, and aim to share these valuable insights with the world. We openly systematize this knowledge into a unified system, yet it is not a dogma, but rather a starting point for those who wish to join us in the process of transforming ourselves and the world around us.
-</p><p>
-To move towards clear goals in a coordinated manner, it is important that we understand each other. For this reason, we develop a special language for productive communication, the Fruit Discourse. The economic model of the Fund's development is based on the principles of voluntary participation and mutual support.
-</p>
+The DeFUCC Foundation is a non-formal non-profit organization whose goal is to promote universalization, cooperation, and creativity in individuals and society.</p>
+<p>
+Since 2012, we have been conducting wide research and developed a number of socio-cultural programs and are implementing them for the best of humankind. We gather and summarize a range of theoretical and practical experience, and aim to share these valuable insights with the world. Our role is to invent, verify and polish new forms of human social activities, that can benefit communities all over the world. We openly systematize this knowledge into a unified system, which is not a dogma, but rather a starting point for those who wish to join us in the journey of transforming ourselves and the world around us.</p>
+<p>
+The purpose of establishing the foundation is to find ways to fund at least a part of these undertakings in a way that they stay open source and available for general public. This means that at some moment of time anyone can get involved into socio-cultural project development. Eventually people around and the society as a whole will recognize the benefits from these enterprises and new ways of meaningful connections between community sponsors and beneficiaries will evolve as a new real world social networks.</p>
+<p>
+To move towards clear goals in a coordinated manner, it is important to understand each other well. For this reason, we develop a special language for productive communication, the Fruit Discourse. The social model of the Fund's development is based on the principles of voluntary participation and mutual support. And it's economy is based on prehistorical gift exchange practices reimagined with modern p2p technologies evolving.</p>
+
+<p>Technology is a heavy burden despite the benefits on it's sharp edge. And there's enough of it to build globally interconnected self-governing communities joining collaboration on bringing harmony to Earth. We just need to use it right, which means use the devices as means to communicate and collaborate with others in real life.</p>
+
 </main-page>
