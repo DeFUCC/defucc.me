@@ -36,8 +36,44 @@ slides:
   mission:
     abbr: "/"
     title: Mission
-    desc: To balance the excess of specialization, competition and consumerism in modern culture by providing ways to explore creative collaboration potential of humans and the society as a whole.
+    desc: To balance the excess of specialisation, competition and consumerism in modern culture by providing ways to explore creative collaboration potential of humans and the society as a whole.
     color: "#333"
+  from:
+    abbr: ''
+    color: blue
+    title: From...
+    desc: Pillars of modern value system
+  spec: 
+    abbr: ''
+    color: "#229"
+    desc: Specialization
+    context: Specialization, both in nature and economics, focuses on developing specific skills or products for survival or market dominance. However, this narrow focus often overlooks the need for broader skills and adaptability, leading to dissatisfaction among individuals who cannot fully realize their potential or engage meaningfully with their community.
+  comp: 
+    abbr: ''
+    color: "#02a"
+    desc: Competition
+    context: Competition, a fundamental principle in both biology and economics, is a double-edged sword. While it drives innovation and progress, it also creates a "winner takes all" environment, often leading to monopolization and leaving many individuals or entities at a disadvantage.
+  cons:
+    color: "#16f"
+    desc: Consumption
+    context: Consumption, the engine of modern economies, is often overemphasized as the primary human desire. This focus on material consumption often overshadows other human needs such as self-realization, respect, and meaningful communication. The relentless pursuit of consumption can lead to a cycle of temporary satisfaction followed by intense dissatisfaction, driving the economy but leaving many individuals unfulfilled.
+  how:
+    color: "#ea0"
+    title: Changing
+    desc: The DeFUCC Foundation is a non-formal social organisation that aims to promote Universalization, Cooperation and Creativity in individuals and society.
+    context:  Since 2012, we have been conducting extensive research and developing and implementing a range of socio-cultural programmes for the benefit of humanity. We gather and synthesise a range of theoretical and practical experiences and aim to share these valuable insights with the world. Our mission is to invent, test and refine new forms of human social activity that can benefit communities around the world. We openly systematise this knowledge into a unified system that is not a dogma, but rather a starting point for those who wish to join us on the journey of transforming ourselves and the world around us.
+  gifting:
+    desc: Gifting
+    context: The purpose of the Foundation is to find ways to fund at least part of these endeavours in such a way that they remain open source and available to the general public. This means that anyone can get involved in the development of socio-cultural projects at any time. Eventually, the people around them and society as a whole will recognise the benefits of these enterprises, and new forms of meaningful connections between community sponsors and beneficiaries will emerge as new real-world social networks.
+  discourse:
+    desc: Discourse
+    context: In order to work in a coordinated way towards clear goals, it is important to understand each other well. That is why we are developing a special language for productive communication, the Fruit Discourse. The social model of the Fund's development is based on the principles of voluntary participation and mutual support. And it's economy is based on prehistoric gift-exchange practices, re-imagined with modern, evolving p2p technologies.
+  to:
+    title: To...
+    context: Technology is a heavy burden, despite the benefits on it's sharp edge. And there's enough of it to build globally interconnected, self-governing communities working together to bring harmony to the planet. We just need to use it properly, which means using the devices to make the world a better place for humans.
+    links:
+      - type: ""
+        url: '/to/'
   explore:
     abbr: "*"
     color: "#555"
@@ -46,20 +82,10 @@ slides:
     links:
       - type: "github"
         url: https://github.com/defucc
-      - type: "ko-fi?"
+      - type: "ko-fi"
         url: https://ko-fi.com/B0B44CM90
 ---
 
 <main-page :slides="$frontmatter.slides" >
-<p>
-The DeFUCC Foundation is a non-formal non-profit organization whose goal is to promote universalization, cooperation, and creativity in individuals and society.</p>
-<p>
-Since 2012, we have been conducting wide research and developed a number of socio-cultural programs and are implementing them for the best of humankind. We gather and summarize a range of theoretical and practical experience, and aim to share these valuable insights with the world. Our role is to invent, verify and polish new forms of human social activities, that can benefit communities all over the world. We openly systematize this knowledge into a unified system, which is not a dogma, but rather a starting point for those who wish to join us in the journey of transforming ourselves and the world around us.</p>
-<p>
-The purpose of establishing the foundation is to find ways to fund at least a part of these undertakings in a way that they stay open source and available for general public. This means that at some moment of time anyone can get involved into socio-cultural project development. Eventually people around and the society as a whole will recognize the benefits from these enterprises and new ways of meaningful connections between community sponsors and beneficiaries will evolve as a new real world social networks.</p>
-<p>
-To move towards clear goals in a coordinated manner, it is important to understand each other well. For this reason, we develop a special language for productive communication, the Fruit Discourse. The social model of the Fund's development is based on the principles of voluntary participation and mutual support. And it's economy is based on prehistorical gift exchange practices reimagined with modern p2p technologies evolving.</p>
-
-<p>Technology is a heavy burden despite the benefits on it's sharp edge. And there's enough of it to build globally interconnected self-governing communities joining collaboration on bringing harmony to Earth. We just need to use it right, which means use the devices as means to communicate and collaborate with others in real life.</p>
 
 </main-page>

@@ -7,11 +7,11 @@ import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
   server: {
-    port: 3200,
+    port: 1242,
   },
   plugins: [
     Icons(),
-    AutoImport({   
+    AutoImport({
       include: [
         /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
         /\.vue$/, /\.vue\?vue/, // .vue
@@ -19,7 +19,8 @@ export default defineConfig({
       ],
       imports: [
         'vue',
-      ], }),
+      ],
+    }),
     WindiCSS({
       scan: {
         dirs: ['.vitepress', './'],
@@ -36,7 +37,7 @@ export default defineConfig({
       extensions: ['vue', 'ts'],
       directoryAsNamespace: true,
       globalNamespaces: ['global'],
-      resolvers: [IconsResolver({prefix: false, })],
+      resolvers: [IconsResolver({ prefix: false, })],
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       exclude: [/node_modules/, /\.git/],
     }),

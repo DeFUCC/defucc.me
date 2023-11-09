@@ -1,3 +1,3 @@
 ## DEFUCC.ME
-### Development Foundation for Universalization, Cooperation and Creativity
 
+### Development Foundation for Universalization, Cooperation and Creativity

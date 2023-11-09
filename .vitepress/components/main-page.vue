@@ -22,8 +22,6 @@ const props = defineProps({
     .text-11vw.flex.flex-col.leading-1em
       a.mr-2(:href="`#${t}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.title }} 
 
-  section.p-4.md-p-12.leading-loose
-    slot 
 
   section.slide(:id="t" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }")
     .p-4
@@ -31,11 +29,15 @@ const props = defineProps({
       .text-5vw.leading-normal.mb-12 {{ term.desc }}
       .text-2xl.text-dark-900.leading-normal.max-w-55ch {{ term.context }}
       .flex.flex-wrap
-        a.p-2.text-100px(v-for="link in term.links" :key="link" :href="link.url" target="_blank")
+        a.p-2.text-100px(v-for="link in term.links" :key="link" :href="link.url" :target="link.url.includes('http') ? '_blank' : ''")
           .p-0
             la-github(v-if="link.type == 'github'")
-            simple-icons-kofi(v-if="link.type == 'ko-fi'")
+            simple-icons-kofi(v-else-if="link.type == 'ko-fi'")
+            mdi-link(v-else)
 
+
+  section.p-4.md-p-12.leading-loose
+    slot 
 
   footer.flex.items-center.bg-dark-400.snap-end.text-white.p-4.z-10.relative
     la-creative-commons.mx-2
