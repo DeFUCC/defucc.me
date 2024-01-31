@@ -1,5 +1,5 @@
 ---
-title: To...
+title: Towards
 description: The new civilizational formula
 date: 2023-11-09
 ---

@@ -18,6 +18,7 @@
 	"license": "MIT",
 	"author": "davay",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
 		"build": "vitepress build ",
 		"deploy": "sh deploy.sh",
@@ -26,18 +27,18 @@
 	},
 	"dependencies": {
 		"@vueuse/core": "10.2.1",
-		"vue": "^3.3.7"
+		"vue": "^3.4.15"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.133",
-		"@types/node": "^20.8.9",
+		"@iconify/json": "^2.2.177",
+		"@types/node": "^20.11.13",
 		"esbuild-register": "^3.5.0",
 		"pug": "^3.0.2",
-		"unplugin-auto-import": "^0.16.7",
-		"unplugin-icons": "^0.17.1",
-		"unplugin-vue-components": "^0.25.2",
-		"vite": "^4.5.0",
-		"vite-plugin-windicss": "^1.9.1",
+		"unplugin-auto-import": "^0.17.5",
+		"unplugin-icons": "^0.18.3",
+		"unplugin-vue-components": "^0.26.0",
+		"vite": "^4.5.2",
+		"vite-plugin-windicss": "^1.9.3",
 		"vitepress": "1.0.0-rc.24",
 		"windicss": "^3.5.6"
 	}

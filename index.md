@@ -2,6 +2,7 @@
 title: Welcome
 subtitle: Development Foundation for Universalization, Cooperation and Creativity
 date: 2021-11-13
+front: true
 slides:
   de:
     abbr: De
@@ -67,23 +68,24 @@ slides:
     context: The purpose of the Foundation is to find ways to fund at least part of these endeavours in such a way that they remain open source and available to the general public. This means that anyone can get involved in the development of socio-cultural projects at any time. Eventually, the people around them and society as a whole will recognise the benefits of these enterprises, and new forms of meaningful connections between community sponsors and beneficiaries will emerge as new real-world social networks.
   discourse:
     desc: Discourse
-    context: In order to work in a coordinated way towards clear goals, it is important to understand each other well. That is why we are developing a special language for productive communication, the Fruit Discourse. The social model of the Fund's development is based on the principles of voluntary participation and mutual support. And it's economy is based on prehistoric gift-exchange practices, re-imagined with modern, evolving p2p technologies.
+    context: In order to work in a coordinated way towards clear goals, it is important to understand each other well. That is why we are developing a special language for productive communication, the Fruit Discourse. The social model of the Foundation's development is based on the principles of voluntary participation and mutual support. And it's economy is based on prehistoric gift-exchange practices, re-imagined with modern  evolving p2p technologies.
   to:
-    title: To...
-    context: Technology is a heavy burden, despite the benefits on it's sharp edge. And there's enough of it to build globally interconnected, self-governing communities working together to bring harmony to the planet. We just need to use it properly, which means using the devices to make the world a better place for humans.
+    title: Towards
+    color: "#808"
+    context: Technology appears to be quite a heavy burden for most of us, despite the benefits on it's sharp edge. And there's enough of it to build globally interconnected, self-governing communities working together to bring harmony to the planet. We can find ways to use it's power properly, which means using tech to make the world a better place to live in. 
     links:
       - type: ""
-        url: '/to/'
+        text: "Read more"
+        url: '/towards/'
   explore:
     abbr: "*"
     color: "#555"
     title: Explore
-    desc: Links to learn more about DeFUCC
+    desc: Links to learn more and participate
     links:
       - type: "github"
+        text: "DeFUCC" 
         url: https://github.com/defucc
-      - type: "ko-fi"
-        url: https://ko-fi.com/B0B44CM90
 ---
 
 <main-page :slides="$frontmatter.slides" >

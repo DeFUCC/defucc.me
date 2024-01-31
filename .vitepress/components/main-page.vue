@@ -6,7 +6,7 @@ import { useFullscreen } from '@vueuse/core'
 const { toggle, isSupported } = useFullscreen();
 const first = ref();
 
-const { frontmatter } = useData();
+const { frontmatter: f } = useData();
 const props = defineProps({
   slides: { type: Object },
 })
@@ -28,12 +28,12 @@ const props = defineProps({
       .text-8vw.mb-8.font-bold {{ term.title }}
       .text-5vw.leading-normal.mb-12 {{ term.desc }}
       .text-2xl.text-dark-900.leading-normal.max-w-55ch {{ term.context }}
-      .flex.flex-wrap
-        a.p-2.text-100px(v-for="link in term.links" :key="link" :href="link.url" :target="link.url.includes('http') ? '_blank' : ''")
-          .p-0
+      .flex.flex-wrap.mt-6
+        a.p-2.flex.items-center.gap-4(v-for="link in term.links" :key="link" :href="link.url" :target="link.url.includes('http') ? '_blank' : ''")
+          .p-0.text-8xl
             la-github(v-if="link.type == 'github'")
-            simple-icons-kofi(v-else-if="link.type == 'ko-fi'")
             mdi-link(v-else)
+          .p-0.text-4xl {{ link.text }}
 
 
   section.p-4.md-p-12.leading-loose
