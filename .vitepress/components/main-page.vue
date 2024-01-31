@@ -1,9 +1,6 @@
 <script setup>
 import { useData } from 'vitepress'
-import { useFullscreen } from '@vueuse/core'
 
-
-const { toggle, isSupported } = useFullscreen();
 const first = ref();
 
 const { frontmatter: f } = useData();
@@ -16,7 +13,8 @@ const props = defineProps({
 .flex.flex-col
   section.slide
     .text-3d.font-bold.flex.flex-wrap
-      a.p-5.my-20(:href="`#${t}`" v-for="(term, t) in slides" :key="term" :style="{ color: term.color }") {{ term.abbr }}
+      a.p-5.my-20(
+      :href="`#${term[0]}`" v-for="(term) in Object.entries(slides).filter(slide =>slide[1]?.abbr)" :key="term" :style="{ color: term[1].color }") {{ term[1].abbr }}
 
   section.slide
     .text-11vw.flex.flex-col.leading-1em
@@ -39,22 +37,7 @@ const props = defineProps({
   section.p-4.md-p-12.leading-loose
     slot 
 
-  footer.flex.items-center.bg-dark-400.snap-end.text-white.p-4.z-10.relative
-    la-creative-commons.mx-2
-    .mr-2 2012–PRESENT
-    .m-0 MIT Licence
-    .flex-1
-    a.text-white.text-2xl.mr-4(href="https://github.com/DeFUCC/defucc.me" target="_blank")
-      la-github
-    a.text-white.text-2xl(href="https://ko-fi.com/B0B44CM90" target="_blank")
-      simple-icons-kofi
 
-  .rounded.p-2.opacity-50.text-2xl.fixed.top-4.right-4.z-15.cursor-pointer.transition-all.duration-200.ease(
-    class="hover:opacity-100"
-    @click="toggle()"
-    v-if="isSupported"
-    )
-    la-expand
 </template>
 
 <style scoped lang="postcss">
